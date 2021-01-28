@@ -1,0 +1,43 @@
+const userService = require('../services/UserService');
+
+const UserController = () => {
+
+    const getAll = async (req, res) => {
+
+        var page = req.query.page;
+        var limit = req.query.limit;
+
+        const users = userService().getAll(page, limit)
+        users.then((result) => {
+            return res.status(200).json(result)
+        })
+        .catch((error) =>{
+            return res.status(500).json(error)
+        })
+    }
+
+    const getRelated = async (req, res) => {
+
+        var id = req.params.id;
+
+        const users = userService().getRelated(id);
+        users.then((result) => {
+            return res.status(200).json(result);
+        })
+        .catch((error) =>{
+            return res.status(500).json(error)
+        })
+    }
+
+    // const test = (req, res) => {
+    //     return res.status(200).json({'foo': 'bar'})
+    // }
+
+    return{
+        getAll,
+        getRelated,
+        // test
+    }
+}
+
+module.exports = UserController;

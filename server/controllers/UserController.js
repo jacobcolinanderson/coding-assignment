@@ -29,14 +29,14 @@ const UserController = () => {
         })
     }
 
-    // const test = (req, res) => {
-    //     return res.status(200).json({'foo': 'bar'})
-    // }
+    const test = (req, res) => {
+        return res.status(200).json({'foo': 'bar'})
+    }
 
     return{
         getAll,
         getRelated,
-        // test
+        test
     }
 }
 

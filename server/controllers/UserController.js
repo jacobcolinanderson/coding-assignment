@@ -30,7 +30,7 @@ const UserController = () => {
     }
 
     const test = (req, res) => {
-        return res.status(200).json({'Hello': 'World'})
+        return res.status(200).json({'hello': 'world'})
     }
 
     return{

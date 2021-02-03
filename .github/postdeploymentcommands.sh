@@ -1,1 +1,1 @@
-node  ./server/migrations/index.js
+node  ../server/migrations/index.js

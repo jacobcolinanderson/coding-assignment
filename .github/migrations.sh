@@ -1,3 +1,2 @@
-echo running migrations
-cd "./site/wwwroot"
+#!/bin/bash
 node ./server/migrations/index.js

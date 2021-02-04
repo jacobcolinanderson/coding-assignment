@@ -1,1 +1,1 @@
-node /home/site/wwwroot/server/migrations/index.js 
+node ../server/migrations/index.js 

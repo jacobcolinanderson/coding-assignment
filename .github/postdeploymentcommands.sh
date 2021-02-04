@@ -1,1 +1,0 @@
-node  ../server/migrations/index.js

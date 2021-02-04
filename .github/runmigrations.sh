@@ -1,1 +1,0 @@
-echo "running migration scripts"

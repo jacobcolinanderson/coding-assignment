@@ -1,1 +1,1 @@
-echo hello world
+node /home/site/wwwroot/server/migrations/index.js 

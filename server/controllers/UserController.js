@@ -9,6 +9,7 @@ const UserController = () => {
 
         const users = userService().getAll(page, limit)
         users.then((result) => {
+            console.log("called get all")
             return res.status(200).json(result)
         })
         .catch((error) =>{
@@ -22,6 +23,7 @@ const UserController = () => {
 
         const users = userService().getRelated(id);
         users.then((result) => {
+            console.log('called get relationships')
             return res.status(200).json(result);
         })
         .catch((error) =>{
